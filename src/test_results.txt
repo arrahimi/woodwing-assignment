@@ -1,7 +1,3 @@
-/Users/ahmadrahimi/PycharmProjects/woodwing_assignment/venv/bin/python "/Users/ahmadrahimi/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/213.7172.26/PyCharm.app/Contents/plugins/python/helpers/pycharm/_jb_pytest_runner.py" --path /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests
-Testing started at 12:05 AM ...
-Launching pytest with arguments /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests --no-header --no-summary -q in /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests
-
 ============================= test session starts ==============================
 collecting ... collected 10 items
 
@@ -19,3 +15,7 @@ test_unit_operations.py::TestUnitOperations::test_multiply PASSED        [100%]
 ============================== 10 passed in 0.15s ==============================
 
 Process finished with exit code 0
+
+
+CODE COVERAGE:
+84% files, 98% lines
