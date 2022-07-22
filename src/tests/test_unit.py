@@ -2,7 +2,6 @@ import pytest
 
 from enums import ValueTypes, Operators
 from tests.base_test import BaseTest
-from vars import VALUE_TYPE_TO_INT, OPERATOR_TO_INT
 
 
 class TestRequest(BaseTest):
@@ -21,6 +20,6 @@ class TestRequest(BaseTest):
                     "operator": Operators.PLUS
                 }
             ],
-            "response_type": VALUE_TYPE_TO_INT["meter"]
+            "response_type": ValueTypes.METERS
         })
         assert response.json.get("data", {}).get("result") == 2.8288
