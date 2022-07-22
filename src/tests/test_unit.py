@@ -1,5 +1,6 @@
 import pytest
 
+from enums import ValueTypes, Operators
 from tests.base_test import BaseTest
 from vars import VALUE_TYPE_TO_INT, OPERATOR_TO_INT
 
@@ -12,12 +13,12 @@ class TestRequest(BaseTest):
             "operations": [
                 {
                     "value": 1,
-                    "type": VALUE_TYPE_TO_INT["meter"]
+                    "type": ValueTypes.METER
                 },
                 {
                     "value": 2,
-                    "type": VALUE_TYPE_TO_INT["yard"],
-                    "operator": OPERATOR_TO_INT["+"]
+                    "type": ValueTypes.YARDS,
+                    "operator": Operators.PLUS
                 }
             ],
             "response_type": VALUE_TYPE_TO_INT["meter"]
