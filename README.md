@@ -4,12 +4,8 @@
 3. I will then create the function and run the tests until it works correctly
 
 ## Schedule
-08:06 Started
-09:04 Break
-10:22 Continue
-
-1
-
-1
-
-1
+08:06 Started\
+09:04 Break\
+10:22 Continue\
+12:58 Finished\
+Time spent: 3:34 hours:minutes
