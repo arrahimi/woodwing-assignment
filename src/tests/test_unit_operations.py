@@ -1,7 +1,6 @@
 import pytest
-
 from enums import ValueTypes, Operators
-from operations import Operation
+from func.operations import Operations, Operation
 
 
 class TestUnitOperations:
@@ -62,3 +61,11 @@ class TestUnitOperations:
         total = op1.exec(total)
         total = op2.exec(total)
         assert total == 12.54
+
+    def test_string_operations(self):
+        """
+        tests multiplying value
+        """
+        ops = Operations("1 YaRdS + 1 MeTeR = Meters", None)
+        total = ops.calculate()
+        assert total == 2.91

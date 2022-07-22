@@ -1,3 +1,5 @@
+import re
+
 import utils
 from enums import Operators
 from exceptions import InvalidOperatorException
@@ -5,10 +7,16 @@ from exceptions import InvalidOperatorException
 
 class Operations:
 
+    re_operations = re.compile("(?P<operation>(?P<value>\d+)\s*(?P<value_type>yards?|meters?))")
+    re_result = re.compile("=\s*(?P<result_type>meters?|yards?)")
+
     def __init__(self, raw_operations, result_value_type):
-        self.result_value_type = result_value_type
-        utils.check_value_type(result_value_type)
-        self.operations = [Operation(result_value_type, op.get("value"), op.get("type"), op.get("operator")) for op in raw_operations]
+        if isinstance(raw_operations, list):
+            self.result_value_type = result_value_type
+            utils.check_value_type(result_value_type)
+            self.operations = [Operation(result_value_type, op.get("value"), op.get("type"), op.get("operator")) for op in raw_operations]
+        elif isinstance(raw_operations, str):
+            raise NotImplementedError
 
     def calculate(self):
         """
