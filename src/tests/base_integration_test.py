@@ -3,7 +3,7 @@ import pytest
 from app import create_app
 
 
-class BaseTest:
+class BaseIntegrationTest:
 
     @pytest.fixture()
     def app(self):

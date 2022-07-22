@@ -1,0 +1,21 @@
+/Users/ahmadrahimi/PycharmProjects/woodwing_assignment/venv/bin/python "/Users/ahmadrahimi/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/213.7172.26/PyCharm.app/Contents/plugins/python/helpers/pycharm/_jb_pytest_runner.py" --path /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests
+Testing started at 12:05 AM ...
+Launching pytest with arguments /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests --no-header --no-summary -q in /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests
+
+============================= test session starts ==============================
+collecting ... collected 10 items
+
+test_integration_calculate.py::TestIntegrationCalculate::test_result PASSED [ 10%]
+test_integration_calculate.py::TestIntegrationCalculate::test_invalid_value_type PASSED [ 20%]
+test_integration_calculate.py::TestIntegrationCalculate::test_invalid_result_value_type PASSED [ 30%]
+test_integration_calculate.py::TestIntegrationCalculate::test_invalid_operator PASSED [ 40%]
+test_integration_calculate.py::TestIntegrationCalculate::test_zero_division_error PASSED [ 50%]
+test_unit_operations.py::TestUnitOperations::test_division_by_zero PASSED [ 60%]
+test_unit_operations.py::TestUnitOperations::test_add PASSED             [ 70%]
+test_unit_operations.py::TestUnitOperations::test_subtract PASSED        [ 80%]
+test_unit_operations.py::TestUnitOperations::test_divide PASSED          [ 90%]
+test_unit_operations.py::TestUnitOperations::test_multiply PASSED        [100%]
+
+============================== 10 passed in 0.15s ==============================
+
+Process finished with exit code 0

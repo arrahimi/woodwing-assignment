@@ -20,4 +20,4 @@ class BaseRoute:
     @staticmethod
     def generate_response(code, message, success, data=None):
         return json.dumps({'success': success, 'message': message, 'data': data}), code,\
-               {'ContentType': 'application/json'}
+               {'Content-Type': 'application/json'}
