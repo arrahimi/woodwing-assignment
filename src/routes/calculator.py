@@ -2,7 +2,7 @@ from flask import request
 
 from enums import Responses
 from exceptions import InvalidOperatorException, InvalidValueTypeException
-from operations import Operations
+from func.operations import Operations
 from routes.base_route import BaseRoute
 
 
