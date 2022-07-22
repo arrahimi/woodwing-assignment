@@ -20,7 +20,7 @@ class CalculatorRoute(BaseRoute):
         :return: response with an error or total_value after the operations are executed
         """
         raw_operations = request.json.get('operations', [])
-        response_type = request.json['response_type']
+        response_type = request.json.get("response_type")
         try:
             operations = Operations(raw_operations, response_type)
             result = operations.calculate()

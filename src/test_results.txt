@@ -1,21 +1,30 @@
+/Users/ahmadrahimi/PycharmProjects/woodwing_assignment/venv/bin/python "/Users/ahmadrahimi/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/213.7172.26/PyCharm.app/Contents/plugins/python/helpers/coverage_runner/run_coverage.py" run "--omit=\"/Users/ahmadrahimi/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/213.7172.26/PyCharm.app/Contents/plugins/python/helpers*\"" "/Users/ahmadrahimi/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/213.7172.26/PyCharm.app/Contents/plugins/python/helpers/pycharm/_jb_pytest_runner.py" --path /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests
+Testing started at 12:55 AM ...
+Launching pytest with arguments /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests --no-header --no-summary -q in /Users/ahmadrahimi/PycharmProjects/woodwing_assignment/src/tests
+
 ============================= test session starts ==============================
-collecting ... collected 10 items
+collecting ... collected 13 items
 
-test_integration_calculate.py::TestIntegrationCalculate::test_result PASSED [ 10%]
-test_integration_calculate.py::TestIntegrationCalculate::test_invalid_value_type PASSED [ 20%]
-test_integration_calculate.py::TestIntegrationCalculate::test_invalid_result_value_type PASSED [ 30%]
-test_integration_calculate.py::TestIntegrationCalculate::test_invalid_operator PASSED [ 40%]
-test_integration_calculate.py::TestIntegrationCalculate::test_zero_division_error PASSED [ 50%]
-test_unit_operations.py::TestUnitOperations::test_division_by_zero PASSED [ 60%]
-test_unit_operations.py::TestUnitOperations::test_add PASSED             [ 70%]
-test_unit_operations.py::TestUnitOperations::test_subtract PASSED        [ 80%]
-test_unit_operations.py::TestUnitOperations::test_divide PASSED          [ 90%]
-test_unit_operations.py::TestUnitOperations::test_multiply PASSED        [100%]
+test_integration_calculate.py::TestIntegrationCalculate::test_result_object PASSED [  7%]
+test_integration_calculate.py::TestIntegrationCalculate::test_result_object_result_type_none PASSED [ 15%]
+test_integration_calculate.py::TestIntegrationCalculate::test_result_string PASSED [ 23%]
+test_integration_calculate.py::TestIntegrationCalculate::test_invalid_value_type PASSED [ 30%]
+test_integration_calculate.py::TestIntegrationCalculate::test_invalid_result_value_type PASSED [ 38%]
+test_integration_calculate.py::TestIntegrationCalculate::test_invalid_operator PASSED [ 46%]
+test_integration_calculate.py::TestIntegrationCalculate::test_zero_division_error PASSED [ 53%]
+test_unit_operations.py::TestUnitOperations::test_division_by_zero PASSED [ 61%]
+test_unit_operations.py::TestUnitOperations::test_add PASSED             [ 69%]
+test_unit_operations.py::TestUnitOperations::test_subtract PASSED        [ 76%]
+test_unit_operations.py::TestUnitOperations::test_divide PASSED          [ 84%]
+test_unit_operations.py::TestUnitOperations::test_multiply PASSED        [ 92%]
+test_unit_operations.py::TestUnitOperations::test_string_operations PASSED [100%]
 
-============================== 10 passed in 0.15s ==============================
+======================== 13 passed, 2 warnings in 0.22s ========================
+Wrote XML report to /Users/ahmadrahimi/Library/Caches/JetBrains/PyCharm2021.3/coverage/woodwing_assignment$.xml
 
 Process finished with exit code 0
 
 
+
 CODE COVERAGE:
-84% files, 98% lines
+91% files, 96% lines

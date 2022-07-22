@@ -68,4 +68,4 @@ class TestUnitOperations:
         """
         ops = Operations("1 YaRdS + 1 MeTeR = Meters", None)
         total = ops.calculate()
-        assert total == 2.91
+        assert total == 1.91

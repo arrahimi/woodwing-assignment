@@ -6,9 +6,9 @@ from tests.base_integration_test import BaseIntegrationTest
 
 class TestIntegrationCalculate(BaseIntegrationTest):
 
-    def test_result(self, client):
+    def test_result_object(self, client):
         """
-        tests whether the calculation result is correct or not
+        tests whether the calculation result is correct or not when math is sent as object
         """
         response = client.post("/api/v1/calculator/calculate", json={
             "operations": [
@@ -23,6 +23,35 @@ class TestIntegrationCalculate(BaseIntegrationTest):
                 }
             ],
             "response_type": ValueTypes.METERS
+        })
+        assert response.json.get("data", {}).get("result") == 2.83
+
+    def test_result_object_result_type_none(self, client):
+        """
+        tests whether invalid_value_type is sent when result_value_type is invalid
+        """
+        response = client.post("/api/v1/calculator/calculate", json={
+            "operations": [
+                {
+                    "value": 1,
+                    "type": ValueTypes.METER
+                },
+                {
+                    "value": 2,
+                    "type": ValueTypes.YARDS,
+                    "operator": Operators.PLUS
+                }
+            ],
+            "response_type": None
+        })
+        assert response.json.get("data", {}).get("result") == Responses.INVALID_VALUE_TYPE
+
+    def test_result_string(self, client):
+        """
+        tests whether the calculation result is correct or not when math is sent as string
+        """
+        response = client.post("/api/v1/calculator/calculate", json={
+            "operations": "2 Yards + 1 meterS = meter",
         })
         assert response.json.get("data", {}).get("result") == 2.83
 
